@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="pasta.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Acervo Digital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#catalog">Catálogo</a></li>
+                    <li><a href="#pricing">Assinatura</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Bem-vindo ao Acervo Digital</h2>
+        <p>Explore arquivos exclusivos para download com a nossa assinatura.</p>
+        <a href="#pricing" class="cta">Assine agora</a>
+    </section>
+
+    <section id="catalog">
+        <h2>Catálogo</h2>
+        <div class="catalog-container">
+            <!-- Itens renderizados dinamicamente pelo JavaScript -->
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Planos de Assinatura</h2>
+        <div class="pricing-container">
+            <div class="plan">
+                <h3>Básico</h3>
+                <p>Acesso a 10 downloads por mês.</p>
+                <button>Assinar</button>
+            </div>
+            <div class="plan">
+                <h3>Profissional</h3>
+                <p>Acesso ilimitado aos arquivos.</p>
+                <button>Assinar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Acervo Digital. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

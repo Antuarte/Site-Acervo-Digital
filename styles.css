@@ -1,0 +1,194 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Fundo off-white */
+    color: #343a40; /* Cinza escuro para texto */
+    margin: 0;
+}
+
+header {
+    background: #0d6efd; /* Azul elegante */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #adb5bd; /* Cinza claro para hover */
+}
+
+nav .button {
+    background: #6c757d; /* Cinza médio */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #1c355e; /* Azul mais escuro */
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #198754; /* Verde elegante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .cta:hover {
+    background: #146c43; /* Verde mais escuro para hover */
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#catalog .catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+#catalog .item {
+    background: #fff;
+    border: 1px solid #dee2e6; /* Cinza claro */
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#catalog .item h3 {
+    color: #495057; /* Cinza médio */
+}
+
+#catalog .item .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#catalog .item .button:hover {
+    background: #0b5ed7; /* Azul mais escuro para hover */
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.plan {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+.plan h3 {
+    margin-bottom: 1rem;
+    color: #0d6efd;
+}
+
+.plan button {
+    background: #198754;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.plan button:hover {
+    background: #146c43;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0b5ed7;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #343a40; /* Cinza escuro */
+    color: #adb5bd; /* Cinza claro */
+}

@@ -1,0 +1,66 @@
+# Acervo Digital
+
+## Sobre o Projeto
+O **Acervo Digital** é um site projetado para disponibilizar arquivos exclusivos para download mediante assinatura. Com uma interface amigável e funcionalidades dinâmicas, este projeto é ideal para quem busca uma solução profissional e elegante para oferecer conteúdo digital.
+
+### Funcionalidades Principais
+- **Catálogo de Arquivos**: Exibição dinâmica de itens disponíveis para download, gerenciada via JavaScript.
+- **Planos de Assinatura**: Modelos de acesso com opções básicas e avançadas.
+- **Formulário de Contato**: Seção para envio de mensagens diretamente pelo site.
+- **Design Responsivo**: Layout adaptado para diferentes dispositivos, garantindo uma experiência consistente.
+
+## Tecnologias Utilizadas
+- **HTML5**: Para a estrutura semântica do site.
+- **CSS3**: Para estilização e design responsivo, com uma paleta moderna e elegante.
+- **JavaScript**: Para funcionalidades dinâmicas, como renderização de catálogo e validação de formulário.
+
+## Estrutura do Projeto
+O projeto é organizado da seguinte forma:
+```
+acervo-digital/
+├── index.html       # Arquivo principal do site
+├── styles.css       # Estilizações personalizadas
+├── scripts.js       # Funções e interações dinâmicas
+└── README.md        # Documentação do projeto
+```
+
+## Como Executar Localmente
+1. **Clone este repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/acervo-digital.git
+   ```
+2. **Acesse o diretório do projeto:**
+   ```bash
+   cd acervo-digital
+   ```
+3. **Abra o arquivo `index.html` em seu navegador:**
+   - Basta clicar duas vezes no arquivo ou usá-lo em um servidor local, como o VSCode Live Server.
+
+## Como Hospedar Online
+Recomendação de plataformas gratuitas para hospedar:
+- **GitHub Pages**: Configuração rápida e simples.
+- **Netlify** ou **Vercel**: Para deploys mais avançados e fáceis.
+
+### Publicando com GitHub Pages
+1. Envie os arquivos para um repositório no GitHub.
+2. Nas **Configurações** do repositório, habilite o GitHub Pages na aba "Pages".
+3. Seu site estará disponível em: `https://seu-usuario.github.io/acervo-digital`.
+
+## Contribuições
+Contribuições são bem-vindas! Se desejar colaborar, siga os passos:
+1. Realize um fork deste repositório.
+2. Crie um branch para suas modificações:
+   ```bash
+   git checkout -b minha-nova-funcionalidade
+   ```
+3. Envie suas alterações:
+   ```bash
+   git push origin minha-nova-funcionalidade
+   ```
+4. Abra um pull request para revisão.
+
+## Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+Sinta-se à vontade para explorar, utilizar e melhorar este projeto. Obrigado por visitar o **Acervo Digital**!
