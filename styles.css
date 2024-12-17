@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Estilos gerais do corpo */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -13,6 +14,7 @@ body {
     margin: 0;
 }
 
+/* Estilos do cabeçalho */
 header {
     background: #0d6efd; /* Azul elegante */
     color: #fff;
@@ -32,6 +34,7 @@ header h1 {
     font-size: 1.8rem;
 }
 
+/* Estilos da navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -55,6 +58,7 @@ nav .button {
     border-radius: 5px;
 }
 
+/* Estilos da seção hero */
 .hero {
     text-align: center;
     padding: 4rem 1rem;
@@ -67,9 +71,10 @@ nav .button {
     margin-bottom: 1rem;
 }
 
+/* Estilos do botão de chamada para ação na seção hero */
 .hero .cta {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 1rem; /* Corrigido o valor de margin-top */
     padding: 0.7rem 1.5rem;
     background: #198754; /* Verde elegante */
     color: #fff;
@@ -82,18 +87,21 @@ nav .button {
     background: #146c43; /* Verde mais escuro para hover */
 }
 
+/* Estilos gerais das seções */
 section {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Estilos do contêiner do catálogo */
 #catalog .catalog-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
 
+/* Estilos dos itens do catálogo */
 #catalog .item {
     background: #fff;
     border: 1px solid #dee2e6; /* Cinza claro */
@@ -122,6 +130,7 @@ section {
     background: #0b5ed7; /* Azul mais escuro para hover */
 }
 
+/* Estilos do contêiner de preços */
 .pricing-container {
     display: flex;
     justify-content: space-evenly;
@@ -129,6 +138,7 @@ section {
     gap: 1rem;
 }
 
+/* Estilos dos planos de assinatura */
 .plan {
     background: #fff;
     border: 1px solid #dee2e6;
@@ -159,6 +169,7 @@ section {
     background: #146c43;
 }
 
+/* Estilos do formulário de contato */
 form {
     display: flex;
     flex-direction: column;
@@ -186,6 +197,7 @@ form button:hover {
     background: #0b5ed7;
 }
 
+/* Estilos do rodapé */
 footer {
     text-align: center;
     padding: 1rem;

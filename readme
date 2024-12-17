@@ -13,54 +13,59 @@ O **Acervo Digital** é um site projetado para disponibilizar arquivos exclusivo
 - **HTML5**: Para a estrutura semântica do site.
 - **CSS3**: Para estilização e design responsivo, com uma paleta moderna e elegante.
 - **JavaScript**: Para funcionalidades dinâmicas, como renderização de catálogo e validação de formulário.
+- **EmailJS**: Para envio de e-mails diretamente do formulário de contato.
 
 ## Estrutura do Projeto
 O projeto é organizado da seguinte forma:
-```
 acervo-digital/
-├── index.html       # Arquivo principal do site
-├── styles.css       # Estilizações personalizadas
-├── scripts.js       # Funções e interações dinâmicas
-└── README.md        # Documentação do projeto
-```
+├── index.html# Arquivo principal do site
+├── styles.css# Estilizações personalizadas
+├── scripts.js# Funções e interações dinâmicas
+└── README.md#
 
 ## Como Executar Localmente
 1. **Clone este repositório:**
    ```bash
    git clone https://github.com/seu-usuario/acervo-digital.git
-   ```
+
 2. **Acesse o diretório do projeto:**
-   ```bash
-   cd acervo-digital
-   ```
-3. **Abra o arquivo `index.html` em seu navegador:**
-   - Basta clicar duas vezes no arquivo ou usá-lo em um servidor local, como o VSCode Live Server.
+bash
+cd acervo-digital
+
+3. **Instale as dependências do EmailJS:**
+bash
+npm install @emailjs/browser
+
+4. **Abra o arquivo index.html em seu navegador:**
+Basta clicar duas vezes no arquivo ou usá-lo em um servidor local, como o VSCode Live Server.
 
 ## Como Hospedar Online
 Recomendação de plataformas gratuitas para hospedar:
-- **GitHub Pages**: Configuração rápida e simples.
-- **Netlify** ou **Vercel**: Para deploys mais avançados e fáceis.
 
-### Publicando com GitHub Pages
-1. Envie os arquivos para um repositório no GitHub.
-2. Nas **Configurações** do repositório, habilite o GitHub Pages na aba "Pages".
-3. Seu site estará disponível em: `https://seu-usuario.github.io/acervo-digital`.
+1. **GitHub Pages: Configuração rápida e simples.**
+2. **Netlify ou Vercel: Para deploys mais avançados e fáceis.**
+
+## - Publicando com GitHub Pages
+1. **Envie os arquivos para um repositório no GitHub.**
+2. **Nas Configurações do repositório, habilite o GitHub Pages na aba "Pages".**
+3. **Seu site estará disponível em: https://seu-usuario.github.io/acervo-digital.**
 
 ## Contribuições
 Contribuições são bem-vindas! Se desejar colaborar, siga os passos:
-1. Realize um fork deste repositório.
-2. Crie um branch para suas modificações:
-   ```bash
-   git checkout -b minha-nova-funcionalidade
-   ```
-3. Envie suas alterações:
-   ```bash
-   git push origin minha-nova-funcionalidade
-   ```
-4. Abra um pull request para revisão.
 
-## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+1. **Realize um fork deste repositório.**
 
----
-Sinta-se à vontade para explorar, utilizar e melhorar este projeto. Obrigado por visitar o **Acervo Digital**!
+2. **Crie um branch para suas modificações:**
+bash
+git checkout -b minha-nova-funcionalidade
+
+3. **Envie suas alterações:**
+bash
+git push origin minha-nova-funcionalidade
+
+4. **Abra um pull request para revisão.**
+
+Licença
+Este projeto está licenciado sob a MIT License.
+
+Sinta-se à vontade para explorar, utilizar e melhorar este projeto. Obrigado por visitar o Acervo Digital!
