@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /**
  * Função para validar o formulário de contato e enviar e-mail.
  * Esta função é executada quando o formulário é enviado.
- * Ela valida os campos do formulário e envia um e-mail usando o EmailJS.
+ * Ela valida os campos do formulário e envia um e-mail usando o servidor Node.js.
  */
 document.querySelector("form").addEventListener("submit", (event) => {
     event.preventDefault(); // Previne o comportamento padrão do formulário
@@ -47,22 +47,23 @@ document.querySelector("form").addEventListener("submit", (event) => {
         return;
     }
 
-    // Parâmetros do template do EmailJS
-    const templateParams = {
-        name: name,
-        email: email,
-        message: message
-    };
-
-    // Envia o e-mail usando EmailJS
-    emailjs.send('service_1zag1f3', 'template_4xmbnt2', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('Mensagem enviada com sucesso!');
-        }, function(error) {
-            console.log('FAILED...', error);
-            alert('Ocorreu um erro ao enviar a mensagem.');
-        });
+    // Envia os dados do formulário para o servidor Node.js
+    fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, message })
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log('SUCCESS!', data);
+        alert('Mensagem enviada com sucesso!');
+    })
+    .catch(error => {
+        console.log('FAILED...', error);
+        alert('Ocorreu um erro ao enviar a mensagem.');
+    });
 
     // Reseta o formulário após o envio
     event.target.reset();

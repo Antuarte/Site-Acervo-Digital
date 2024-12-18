@@ -25,8 +25,8 @@ acervo-digital/
 
 ## Como Executar Localmente
 1. **Clone este repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/acervo-digital.git
+bash
+git clone https://github.com/seu-usuario/acervo-digital.git
 
 2. **Acesse o diretório do projeto:**
 bash
