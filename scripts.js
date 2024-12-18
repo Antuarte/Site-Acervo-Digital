@@ -1,22 +1,15 @@
 // Script JavaScript para o site de acervo digital.
 
-/**
- * Função para lidar com o envio do formulário de contato.
- * Esta função exibe uma mensagem de confirmação quando o formulário é enviado.
- */
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("form").addEventListener("submit", (event) => {
-        event.preventDefault(); // Previne o comportamento padrão do formulário
+    const iframe = document.getElementById('googleForm');
 
-        // Obtém os valores dos campos do formulário
-        const name = document.querySelector("input[name='name']").value;
-        const email = document.querySelector("input[name='email']").value;
-        const package = document.querySelector("select[name='package']").value;
+    iframe.addEventListener('load', () => {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 
-        // Exibe uma mensagem de confirmação
-        alert(`Obrigado, ${name}! Sua solicitação para o pacote ${package} foi recebida. Entraremos em contato pelo e-mail ${email}.`);
+        const resizeObserver = new ResizeObserver(() => {
+            iframe.style.height = iframeDocument.body.scrollHeight + 'px';
+        });
 
-        // Reseta o formulário após o envio
-        event.target.reset();
+        resizeObserver.observe(iframeDocument.body);
     });
 });

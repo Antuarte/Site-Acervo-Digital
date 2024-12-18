@@ -127,46 +127,18 @@ section {
     color: #0f52ba; /* Azul-safira */
 }
 
-.plan button {
-    background: #198754;
-    color: #fff;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.plan button:hover {
-    background: #146c43;
-}
-
-/* Estilos do formulário de contato */
-form {
+/* Estilos do contêiner do formulário */
+.form-container {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-form input, form textarea {
-    padding: 0.5rem;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
+.form-container iframe {
     width: 100%;
-}
-
-form button {
-    background: #0f52ba; /* Azul-safira */
-    color: #fff;
+    height: 100%;
     border: none;
-    padding: 0.7rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-form button:hover {
-    background: #0b5ed7;
 }
 
 /* Estilos do rodapé */
