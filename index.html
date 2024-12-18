@@ -13,7 +13,6 @@
             <h1>Acervo Digital</h1>
             <nav>
                 <ul>
-                    <li><a href="#catalog">Catálogo</a></li>
                     <li><a href="#pricing">Assinatura</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
@@ -24,13 +23,10 @@
     <section class="hero">
         <h2>Bem-vindo ao Acervo Digital</h2>
         <p>Explore arquivos exclusivos para download com a nossa assinatura.</p>
-        <a href="#pricing" class="cta">Assine agora</a>
-    </section>
-
-    <section id="catalog">
-        <h2>Catálogo</h2>
-        <div class="catalog-container">
-            <!-- Itens renderizados dinamicamente pelo JavaScript -->
+        <div class="cta">
+            <h3>Como funciona o sistema de planos?</h3>
+            <p>Oferecemos três tipos de planos: Básico, Intermediário e Premium. Cada plano dá acesso a uma quantidade diferente de downloads mensais. Escolha o plano que melhor se adapta às suas necessidades e comece a explorar nosso acervo digital.</p>
+            <a href="#pricing" class="cta-button">Veja os Planos</a>
         </div>
     </section>
 
@@ -40,11 +36,19 @@
             <div class="plan">
                 <h3>Básico</h3>
                 <p>Acesso a 10 downloads por mês.</p>
+                <p>Preço: R$ 29,90</p>
                 <button>Assinar</button>
             </div>
             <div class="plan">
-                <h3>Profissional</h3>
+                <h3>Intermediário</h3>
+                <p>Acesso a 50 downloads por mês.</p>
+                <p>Preço: R$ 59,90</p>
+                <button>Assinar</button>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
                 <p>Acesso ilimitado aos arquivos.</p>
+                <p>Preço: R$ 99,90</p>
                 <button>Assinar</button>
             </div>
         </div>
@@ -52,10 +56,16 @@
 
     <section id="contact">
         <h2>Contato</h2>
+        <p>Para adquirir um pacote, preencha o formulário abaixo:</p>
         <form id="contactForm">
             <input type="text" name="name" placeholder="Seu nome" required>
             <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+            <label for="package">Selecione o pacote desejado:</label>
+            <select name="package" id="package" required>
+                <option value="basic">Básico - R$ 29,90</option>
+                <option value="intermediate">Intermediário - R$ 59,90</option>
+                <option value="premium">Premium - R$ 99,90</option>
+            </select>
             <button type="submit">Enviar</button>
         </form>
     </section>
