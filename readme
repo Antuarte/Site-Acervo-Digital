@@ -1,71 +1,286 @@
 # Acervo Digital
 
-## Sobre o Projeto
-O **Acervo Digital** é um site projetado para disponibilizar arquivos exclusivos para download mediante assinatura. Com uma interface amigável e funcionalidades dinâmicas, este projeto é ideal para quem busca uma solução profissional e elegante para oferecer conteúdo digital.
-
-### Funcionalidades Principais
-- **Catálogo de Arquivos**: Exibição dinâmica de itens disponíveis para download, gerenciada via JavaScript.
-- **Planos de Assinatura**: Modelos de acesso com opções básicas e avançadas.
-- **Formulário de Contato**: Seção para envio de mensagens diretamente pelo site.
-- **Design Responsivo**: Layout adaptado para diferentes dispositivos, garantindo uma experiência consistente.
-
-## Tecnologias Utilizadas
-- **HTML5**: Para a estrutura semântica do site.
-- **CSS3**: Para estilização e design responsivo, com uma paleta moderna e elegante.
-- **JavaScript**: Para funcionalidades dinâmicas, como renderização de catálogo e validação de formulário.
-- **EmailJS**: Para envio de e-mails diretamente do formulário de contato.
+Bem-vindo ao Acervo Digital! Este projeto é um site que oferece acesso a um acervo digital exclusivo mediante assinatura. Os usuários podem escolher entre diferentes planos de assinatura e preencher um formulário de contato para adquirir um pacote.
 
 ## Estrutura do Projeto
-O projeto é organizado da seguinte forma:
-acervo-digital/
-├── index.html# Arquivo principal do site
-├── styles.css# Estilizações personalizadas
-├── scripts.js# Funções e interações dinâmicas
-└── README.md#
 
-## Como Executar Localmente
-1. **Clone este repositório:**
-bash
-git clone https://github.com/seu-usuario/acervo-digital.git
+### Arquivos Principais
 
-2. **Acesse o diretório do projeto:**
-bash
-cd acervo-digital
+- `index.html`: Estrutura principal do site.
+- `styles.css`: Estilos CSS para o layout e design do site.
+- `scripts.js`: Script JavaScript para funcionalidades adicionais.
 
-3. **Instale as dependências do EmailJS:**
-bash
-npm install @emailjs/browser
+### Seções do Site
 
-4. **Abra o arquivo index.html em seu navegador:**
-Basta clicar duas vezes no arquivo ou usá-lo em um servidor local, como o VSCode Live Server.
+1. **Cabeçalho (Header)**
+    - Contém o título do site e a navegação principal.
 
-## Como Hospedar Online
-Recomendação de plataformas gratuitas para hospedar:
+2. **Seção Hero**
+    - Apresenta uma mensagem de boas-vindas e uma explicação sobre como funcionam os planos de assinatura.
 
-1. **GitHub Pages: Configuração rápida e simples.**
-2. **Netlify ou Vercel: Para deploys mais avançados e fáceis.**
+3. **Planos de Assinatura (Pricing)**
+    - Descrição dos diferentes planos de assinatura disponíveis: Básico, Intermediário e Premium.
 
-## - Publicando com GitHub Pages
-1. **Envie os arquivos para um repositório no GitHub.**
-2. **Nas Configurações do repositório, habilite o GitHub Pages na aba "Pages".**
-3. **Seu site estará disponível em: https://seu-usuario.github.io/acervo-digital.**
+4. **Contato (Contact)**
+    - Formulário do Google Forms incorporado para que os usuários possam preencher e enviar suas informações para adquirir um pacote.
 
-## Contribuições
-Contribuições são bem-vindas! Se desejar colaborar, siga os passos:
+5. **Rodapé (Footer)**
+    - Informações de direitos autorais.
 
-1. **Realize um fork deste repositório.**
+## Código HTML
 
-2. **Crie um branch para suas modificações:**
-bash
-git checkout -b minha-nova-funcionalidade
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="iconedepasta.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Acervo Digital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#pricing">Assinatura</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-3. **Envie suas alterações:**
-bash
-git push origin minha-nova-funcionalidade
+    <section class="hero">
+        <h2>Bem-vindo ao Acervo Digital</h2>
+        <p>Explore arquivos exclusivos para download com a nossa assinatura.</p>
+        <div class="cta">
+            <h3>Como funciona o sistema de planos?</h3>
+            <p>Oferecemos três tipos de planos: Básico, Intermediário e Premium. Cada plano dá acesso a uma quantidade diferente de downloads mensais. Escolha o plano que melhor se adapta às suas necessidades e comece a explorar nosso acervo digital.</p>
+            <a href="#pricing" class="cta-button">Veja os Planos</a>
+        </div>
+    </section>
 
-4. **Abra um pull request para revisão.**
+    <section id="pricing">
+        <h2>Planos de Assinatura</h2>
+        <div class="pricing-container">
+            <div class="plan">
+                <h3>Básico</h3>
+                <p>Acesso a 10 downloads por mês.</p>
+                <p>Preço: R$ 29,90</p>
+            </div>
+            <div class="plan">
+                <h3>Intermediário</h3>
+                <p>Acesso a 50 downloads por mês.</p>
+                <p>Preço: R$ 59,90</p>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
+                <p>Acesso ilimitado aos arquivos.</p>
+                <p>Preço: R$ 99,90</p>
+            </div>
+        </div>
+    </section>
 
-Licença
-Este projeto está licenciado sob a MIT License.
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Para adquirir um pacote, preencha o formulário abaixo:</p>
+        <div class="form-container">
+            <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSevq83Fnik0onxrWBVmuN0zb4e7Punjyvf4Y_t3PGEo-gaUpw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </div>
+    </section>
 
-Sinta-se à vontade para explorar, utilizar e melhorar este projeto. Obrigado por visitar o Acervo Digital!
+    <footer>
+        <p>&copy; 2024 Acervo Digital. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+```
+
+## Código CSS
+
+```css
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #e0e7ff; /* Azul-pálido */
+    color: #343a40; /* Cinza escuro para texto */
+    margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #0f52ba; /* Azul-safira */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #adb5bd; /* Cinza claro para hover */
+}
+
+/* Estilos da seção hero */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #1c355e; /* Azul-chetwode */
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos do bloco de chamada para ação na seção hero */
+.hero .cta {
+    background: #0f52ba; /* Azul-safira */
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.hero .cta h3 {
+    margin-bottom: 1rem;
+}
+
+.hero .cta p {
+    margin-bottom: 1rem;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #198754; /* Verde elegante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #146c43; /* Verde mais escuro para hover */
+}
+
+/* Estilos gerais das seções */
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos do contêiner de preços */
+.pricing-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Estilos dos planos de assinatura */
+.plan {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+.plan h3 {
+    margin-bottom: 1rem;
+    color: #0f52ba; /* Azul-safira */
+}
+
+/* Estilos do contêiner do formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container iframe {
+    width: 100%;
+    border: none;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #343a40; /* Cinza escuro */
+    color: #adb5bd; /* Cinza claro */
+}
+```
+
+## Código JavaScript
+
+```javascript
+// Script JavaScript para o site de acervo digital.
+
+document.addEventListener("DOMContentLoaded", () => {
+    const iframe = document.getElementById('googleForm');
+
+    iframe.addEventListener('load', () => {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+        const resizeObserver = new ResizeObserver(() => {
+            iframe.style.height = iframeDocument.body.scrollHeight + 'px';
+        });
+
+        resizeObserver.observe(iframeDocument.body);
+    });
+});
+```
+
+## Como Usar
+
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/Antuarte/Site-Acervo-Digital.git
+    ```
+
+2. **Abra o arquivo `index.html`** no seu navegador para visualizar o site.
+
+3. **Personalize** os arquivos conforme necessário para atender às suas necessidades.
